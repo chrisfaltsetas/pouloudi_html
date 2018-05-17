@@ -10,14 +10,19 @@
 
   <body style="">
     <meta charset="utf-8">
+    <form action="suspend.html" method="get" name="login form">
+      <div id="login" align="center">
 
-    <fieldset>
-      <legend><b>Login Credentials</b></legend>
-      <b>
-        Username: <input type="text" name="username" id="username" placeholder="Username"><br>
-        Password: <input type="password" name="password" placeholder="Password"><br>
-      </b>
-    </fieldset>
+        <h3><b>Login Credentials</b></h3>
+
+          Username: <input type="text" name="username" id="username" placeholder="Username" required><br>
+          Password: <input type="password" name="password" id="password" placeholder="Password" required><br>
+
+          <input type="submit" name="submit" value="Submit">
+
+      </div>
+    </form>
+
 
   </body>
 </html>
