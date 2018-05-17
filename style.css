@@ -4,3 +4,17 @@ body {
       background-repeat: no-repeat;
       background-position: center top;
 }
+
+#email {
+        width: 400px;
+}
+
+#message {
+            height: 400px;
+            width: 1000px;
+}
+
+#send_arrow {
+              height: 50px;
+              width: 70px;
+}
