@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/logo.png">
+    <title>Vodafone CRM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <meta charset="utf-8">
+
+    <table border="1">
+      <tr>
+        <td><a href="welcome.html"> <img src="https://seeklogo.com/images/V/vodafone-logo-8344E399FE-seeklogo.com.png"alt="Home"width="50"height="50"></a></td>
+        <td><a href="report.html"> <img src="https://i1.mail.com/mcom/372/5107372,pd=1/.jpg"alt="Communication"width="50"height="50"></a></td>
+        <td><a href="suspend.html"> <img src="https://media.cdnandroid.com/e7/30/5d/79/imagen-block-call-block-sms-0thumb.jpg"alt="Call Barring"width="50"height="50"></a></td>
+        <td><a href="monitoring.html"> <img src="http://www.freepngimg.com/thumb/monitor/2-monitor-transparent-lcd-png-image-thumb.png" alt="Monitoring"width="50"height="50"></a></td>
+      </tr>
+    <table>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $('#SubmitButton').click(function() {
+        checked = $("input[type=checkbox]:checked").length;
+
+        if(!checked) {
+          alert("You must check at least one checkbox.");
+          return false;
+        }
+
+      });
+    });
+    </script>
+    <hr>
+    <h2 align="center">Monitoring</h2>
+    <hr>
+    <form>
+      <b>Sex</b>
+      <ul>
+        <li><input type="checkbox" name="Male">Male</li>
+        <li><input type="checkbox" name="Female">Female</li>
+        <li><input type="checkbox" name="Other">Other</li>
+      </ul>
+      <b>Age</b>
+      <ul>
+        <li><input type="checkbox" name="Underaged">&lt;18</li>
+        <li><input type="checkbox" name="Young Adults">18-30</li>
+        <li><input type="checkbox" name="Young Middle aged">31-45</li>
+        <li><input type="checkbox" name="Late Middle aged">46-60</li>
+        <li><input type="checkbox" name="Elderly">&gt;60</li>
+      </ul>
+      <b>Income</b>
+      <ul>
+        <li><input type="checkbox" name="low">&lt;5000</li>
+        <li><input type="checkbox" name="Medium-Low">5000-20000</li>
+        <li><input type="checkbox" name="Medium">20000-40000</li>
+        <li><input type="checkbox" name="High">&gt;40000</li>
+      </ul>
+      <b>Customer Type</b>
+      <ul>
+        <li><input type="checkbox" name="LC">Loyal Customer</li>
+        <li><input type="checkbox" name="NC">New Customer</li>
+        <li><input type="checkbox" name="PC">Problematic Customers</li>
+        <li><input type="checkbox" name="FC">Future Customer</li>
+      </ul>
+      <input type="reset" name="reset" value="Uncheck All">
+      <input type="submit" name="submit"value="Submit" id="SubmitButton">
+    </form>
+  </body>
+</html>
