@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="UTF-8">
+
     <link rel="icon" href="images/logo.png">
     <title>Vodafone Suspend</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+    <meta charset="UTF-8">
+
     <table border="1">
       <tr>
-        <td><a href=""> <img src="https://seeklogo.com/images/V/vodafone-logo-8344E399FE-seeklogo.com.png"alt="Home"width="50"height="50"></a></td>
-        <td><a href=""> <img src="https://i1.mail.com/mcom/372/5107372,pd=1/.jpg"alt="Communication"width="50"height="50"></a></td>
+        <td><a href="welcome.html"> <img src="https://seeklogo.com/images/V/vodafone-logo-8344E399FE-seeklogo.com.png"alt="Home"width="50"height="50"></a></td>
+        <td><a href="report.html"> <img src="https://i1.mail.com/mcom/372/5107372,pd=1/.jpg"alt="Communication"width="50"height="50"></a></td>
         <td><a href="suspend.html"> <img src="https://media.cdnandroid.com/e7/30/5d/79/imagen-block-call-block-sms-0thumb.jpg"alt="Call Barring"width="50"height="50"></a></td>
-        <td><a href=""> <img src="http://www.freepngimg.com/thumb/monitor/2-monitor-transparent-lcd-png-image-thumb.png" alt="Monitoring"width="50"height="50"></a></td>
+        <td><a href="monitoring.html"> <img src="http://www.freepngimg.com/thumb/monitor/2-monitor-transparent-lcd-png-image-thumb.png" alt="Monitoring"width="50"height="50"></a></td>
       </tr>
     <table>
 
     <hr>
-    <h2 style="text-align:center"> BREAKING BAR </h2>
-    <form action="login.html" method="post" name="myform">
+    <h2 align="center"> BREAKING BAR </h2>
+
+    <form action="welcome.html" method="post" name="myform">
       <p id="verbally"> <h3> Discussion Flow </h3>
         <ul>
-           <li> Hello sir, how can I help you? </li>
-           <li> Can you give me please your telephone number, VAT number </li>
-           <li> After my check I see that your line is suspended. Did you make any payment? </li>
-           <li> <b> If customer say yes:</b> Can you tell me the receipt number? </li>
-           <li> <b> If customer say no:</b> You have to make a payment in order to have your services back. </li>
+          <li> Hello sir, how can I help you? </li>
+          <li> Can you give me please your telephone number, VAT number </li>
+          <li> After my check I see that your line is suspended. Did you make any payment? </li>
+          <li> <b> If customer say yes:</b> Can you tell me the receipt number? </li>
+          <li> <b> If customer say no:</b> You have to make a payment in order to have your services back. </li>
         </ul>
       </p>
+
       <div id="paragraph">
-        <p> <h3> Payments details </h3>
-          VAT number:<input type="text" name="breakingbar" id="vatnumber" placeholder="vat number here" required><br>
+        <h3> Payments details </h3>
+          VAT number:<input type="text" name="vatnumber" id="vatnumber" placeholder="vat number here" required><br>
           Phone number:<input type="tel" name="tel" id="tel" placeholder="phone number here" required><br>
-          Receipt details:<input type="text" name="receipt" id="check" placeholder="check details here" required><br>
-        </p>
+          Receipt details:<input type="text" name="receipt" id="receipt" placeholder="receipt number here" required><br><br>
         <input type="submit" name="submit" value="Submit">
         <b> Thank you for the payment your services will be back at 30 minutes </b>
       </div>
+
+    </form>
   </body>
 </html>
